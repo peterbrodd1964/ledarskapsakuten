@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ledarskapsakuten</title>
+  <meta name="description" content="Ledarskapsakuten – stöd för chefer och ledare när ledarskap blir svårt.">
+  <style>
+    :root{
+      --ink:#111111;
+      --paper:#ffffff;
+      --accent:#ff7a00;
+      --muted:#666666;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--paper);color:var(--ink)}
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    .page{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      padding:40px 48px 28px;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--max);
+      margin:0 auto;
+    }
+    header{
+      padding-bottom:8vh;
+    }
+    .logo{
+      display:block;
+      width:min(520px, 72vw);
+      height:auto;
+    }
+    main{
+      flex:1;
+      display:flex;
+      align-items:center;
+    }
+    .hero{
+      max-width:920px;
+      padding-bottom:7vh;
+    }
+    h1{
+      margin:0 0 28px;
+      font-size:clamp(48px, 8vw, 108px);
+      line-height:.94;
+      letter-spacing:-0.045em;
+      font-weight:800;
+    }
+    .accent{
+      width:74px;
+      height:8px;
+      background:var(--accent);
+      border-radius:999px;
+      margin:0 0 32px;
+    }
+    p{
+      margin:0;
+      max-width:760px;
+      font-size:clamp(21px, 2.15vw, 31px);
+      line-height:1.42;
+      letter-spacing:-0.015em;
+    }
+    .reason{
+      margin-top:28px;
+      font-weight:700;
+    }
+    .promise{
+      margin-top:14px;
+    }
+    .soon{
+      margin-top:38px;
+      font-size:15px;
+      line-height:1.3;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-weight:700;
+      color:var(--muted);
+    }
+    footer{
+      padding-top:36px;
+      font-size:14px;
+      line-height:1.5;
+      color:var(--muted);
+    }
+    @media (max-width:700px){
+      .page{padding:26px 22px 22px}
+      header{padding-bottom:9vh}
+      .logo{width:min(420px, 88vw)}
+      .hero{padding-bottom:4vh}
+      h1{margin-bottom:22px}
+      .accent{width:56px;height:6px;margin-bottom:26px}
+      .reason{margin-top:22px}
+      .soon{margin-top:30px}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="wrap">
+      <img class="logo" src="ledarskapsakuten-logo.png" alt="Ledarskapsakuten">
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <div class="accent" aria-hidden="true"></div>
+        <h1>Ledarskap är svårt.</h1>
+
+        <p>
+          När ett svårt beslut måste fattas.<br>
+          När människor eller verksamheten inte fungerar som de ska.<br>
+          Eller när man som chef behöver någon erfaren att tänka högt med.
+        </p>
+
+        <p class="reason">Det är därför Ledarskapsakuten finns.</p>
+        <p class="promise">Jag hjälper bra chefer bli bättre ledare – och bra ledare bli bättre chefer.</p>
+
+        <div class="soon">Vi öppnar snart.</div>
+      </section>
+    </main>
+
+    <footer class="wrap">
+      © Ledarskapsakuten
+    </footer>
+  </div>
+</body>
+</html>
