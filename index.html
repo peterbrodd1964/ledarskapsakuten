@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ledarskapsakuten</title>
-  <meta name="description" content="Ledarskapsakuten">
-  
+  <title>Ledarskapsakuten | Peter Brodd</title>
+  <meta name="description" content="Ledarskapsakuten – Interim och chefsstöd med Peter Brodd.">
+
   <style>
     * {
       box-sizing: border-box;
@@ -13,112 +13,235 @@
 
     html, body {
       margin: 0;
-      background: #ffffff;
-      color: #111111;
+      min-height: 100%;
     }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      background: #241b14;
       -webkit-font-smoothing: antialiased;
     }
 
-    .page {
+    .hero {
       min-height: 100vh;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 50px;
+      position: relative;
+      background-image:
+        linear-gradient(
+          90deg,
+          rgba(18, 13, 9, 0.82) 0%,
+          rgba(18, 13, 9, 0.58) 43%,
+          rgba(18, 13, 9, 0.12) 75%
+        ),
+        url("kaffebild.png");
+      background-size: cover;
+      background-position: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
     }
 
-    .logo {
-      display: block;
-      width: min(400px, 75vw);
-      height: auto;
-      margin-bottom: 65px;
+    .topbar {
+      width: min(1400px, calc(100% - 80px));
+      margin: 0 auto;
+      padding: 42px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
     }
 
-    h1 {
-      max-width: 850px;
-      margin: 0;
-      font-size: clamp(42px, 5vw, 70px);
-      line-height: 1.05;
-      letter-spacing: -0.04em;
-      font-weight: 800;
+    .brand {
+      display: flex;
+      align-items: stretch;
+      gap: 14px;
     }
 
-    .contact {
-      margin-top: 45px;
-      font-size: 19px;
-      line-height: 1.5;
+    .orange-line {
+      width: 7px;
+      background: #f26522;
+    }
+
+    .brand-name {
+      font-size: 31px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-person {
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 4px;
+    }
+
+    .toplinks {
+      display: flex;
+      gap: 36px;
+      padding-top: 7px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     a {
-      color: #111111;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 4px;
+      color: inherit;
+      text-decoration: none;
     }
 
-    a:hover {
-      color: #ff7a00;
+    .content {
+      width: min(1400px, calc(100% - 80px));
+      margin: auto;
+      padding-bottom: 100px;
     }
 
-    @media (max-width: 700px) {
-      .page {
-        padding: 30px 24px;
-        justify-content: flex-start;
+    h1 {
+      max-width: 920px;
+      margin: 0;
+      font-size: clamp(42px, 4.2vw, 70px);
+      line-height: 1.12;
+      font-weight: 300;
+      letter-spacing: -2px;
+    }
+
+    .accent {
+      color: #f26522;
+    }
+
+    .services {
+      margin-top: 32px;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      color: #f26522;
+      margin: 0 22px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 18px 30px;
+      border-radius: 40px;
+      border: 1px solid rgba(255,255,255,.8);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: .2s ease;
+    }
+
+    .button-primary {
+      background: #f26522;
+      border-color: #f26522;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        background-position: 42% center;
       }
 
-      .logo {
-        width: min(350px, 88vw);
-        margin-top: 25px;
-        margin-bottom: 65px;
+      .topbar,
+      .content {
+        width: calc(100% - 40px);
+      }
+
+      .topbar {
+        padding-top: 25px;
+      }
+
+      .toplinks {
+        display: none;
+      }
+
+      .brand-name {
+        font-size: 25px;
+      }
+
+      .content {
+        margin-top: 70px;
+        margin-bottom: 0;
+        padding-bottom: 55px;
       }
 
       h1 {
-        font-size: clamp(38px, 11vw, 54px);
+        font-size: 42px;
+        letter-spacing: -1px;
       }
 
-.temporary {
-  margin-top: 24px;
-  font-size: 18px;
-  color: #666666;
-}
-      .contact {
-        margin-top: 35px;
-        font-size: 17px;
+      .services {
+        font-size: 13px;
+        letter-spacing: 3px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   </style>
 </head>
 
 <body>
+  <main class="hero">
 
-  <main class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="orange-line"></div>
+        <div>
+          <div class="brand-name">Ledarskapsakuten</div>
+          <div class="brand-person">PETER BRODD</div>
+        </div>
+      </div>
 
-    <img
-      class="logo"
-      src="ledarskapsakuten-logo.png"
-      alt="Ledarskapsakuten"
-    >
+      <nav class="toplinks">
+        <a href="https://www.linkedin.com/in/broddpeter"
+           target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="mailto:info@ledarskapsakuten.se">Kontakt</a>
+      </nav>
+    </header>
 
-    <h1>
-      Hjälper bra ledare bli bättre chefer och bra chefer bli bättre ledare.
-    </h1>
+    <section class="content">
 
- <p class="temporary">
-  Ledarskapsakuten är under utveckling. Mer kommer snart.
-</p>
-    
-    <p class="contact">
-      Kontakta via
-      <a href="https://www.linkedin.com/in/broddpeter" target="_blank">LinkedIn</a>
-      eller
-      <a href="mailto:info@ledarskapsakuten.se">info@ledarskapsakuten.se</a>
-    </p>
+      <h1>
+        Hjälper bra ledare bli
+        <span class="accent">bättre chefer</span><br>
+        och bra chefer bli
+        <span class="accent">bättre ledare.</span>
+      </h1>
+
+      <div class="services">
+        Interim <span class="divider">|</span> Chefsstöd
+      </div>
+
+      <div class="buttons">
+        <a class="button button-primary"
+           href="https://www.linkedin.com/in/broddpeter"
+           target="_blank" rel="noopener">
+          Följ Peter på LinkedIn ↗
+        </a>
+
+        <a class="button"
+           href="mailto:info@ledarskapsakuten.se">
+          Kontakt ↗
+        </a>
+      </div>
+
+    </section>
 
   </main>
-
 </body>
 </html>
