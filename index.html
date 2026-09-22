@@ -149,49 +149,75 @@
       transform: translateY(-2px);
     }
 
-    @media (max-width: 760px) {
-      .hero {
-        background-position: 42% center;
-      }
+   @media (max-width: 760px) {
+  .hero {
+    min-height: 100svh;
+    background-position: 54% center;
+  }
 
-      .topbar,
-      .content {
-        width: calc(100% - 40px);
-      }
+  .topbar,
+  .content {
+    width: calc(100% - 32px);
+  }
 
-      .topbar {
-        padding-top: 25px;
-      }
+  .topbar {
+    padding-top: 22px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    gap: 16px;
+  }
 
-      .toplinks {
-        display: none;
-      }
+  .brand-name {
+    font-size: 24px;
+  }
 
-      .brand-name {
-        font-size: 25px;
-      }
+  .brand-person {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
 
-      .content {
-        margin-top: 70px;
-        margin-bottom: 0;
-        padding-bottom: 55px;
-      }
+  .toplinks {
+    display: flex;
+    gap: 18px;
+    padding-top: 0;
+    font-size: 9px;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+  }
 
-      h1 {
-        font-size: 42px;
-        letter-spacing: -1px;
-      }
+  .content {
+    margin-top: 20px;
+    margin-bottom: auto;
+    padding-bottom: 40px;
+  }
 
-      .services {
-        font-size: 13px;
-        letter-spacing: 3px;
-      }
+  h1 {
+    max-width: 360px;
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: -1px;
+  }
 
-      .buttons {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
+  .services {
+    margin-top: 22px;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+  }
+
+  .divider {
+    margin: 0 12px;
+  }
+
+  .buttons {
+    margin-top: 24px;
+  }
+
+  .button {
+    padding: 15px 22px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+}
   </style>
 </head>
 
