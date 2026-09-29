@@ -1,1 +1,419 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Chefsstöd | Ledarskapsakuten – Peter Brodd</title>
+
+  <meta name="description"
+        content="Chefsstöd för chefer som behöver ett erfaret bollplank i beslut, förändring, ledarskap och svåra situationer. Peter Brodd, Ledarskapsakuten.">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      background: #1c1713;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background:
+        radial-gradient(circle at 80% 35%, rgba(242,101,34,.06), transparent 35%),
+        linear-gradient(120deg, #211a15 0%, #171411 100%);
+    }
+
+    .topbar {
+      width: min(1400px, calc(100% - 80px));
+      margin: 0 auto;
+      padding: 42px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: stretch;
+      gap: 14px;
+    }
+
+    .orange-line {
+      width: 7px;
+      background: #f26522;
+    }
+
+    .brand-name {
+      font-size: 31px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -.5px;
+    }
+
+    .brand-person {
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 4px;
+    }
+
+    .toplinks {
+      display: flex;
+      gap: 36px;
+      padding-top: 7px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .content {
+      width: min(1400px, calc(100% - 80px));
+      margin: 70px auto 120px;
+    }
+
+    .story {
+      max-width: 850px;
+      position: relative;
+      padding-left: 38px;
+    }
+
+    .story::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 7px;
+      height: 250px;
+      background: #f26522;
+    }
+
+    .eyebrow {
+      margin-bottom: 24px;
+      color: #f26522;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 34px;
+      max-width: 820px;
+      font-size: clamp(42px, 4.3vw, 66px);
+      line-height: 1.08;
+      font-weight: 300;
+      letter-spacing: -2px;
+    }
+
+    .intro {
+      max-width: 720px;
+      font-size: 19px;
+      line-height: 1.7;
+      color: rgba(255,255,255,.9);
+    }
+
+    .intro p {
+      margin: 0 0 24px;
+    }
+
+    .intro strong {
+      color: #f26522;
+      font-weight: 600;
+    }
+
+    .section {
+      max-width: 760px;
+      margin-top: 62px;
+    }
+
+    h2 {
+      margin: 0 0 28px;
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: 400;
+      letter-spacing: -.5px;
+    }
+
+    .topics {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 18px;
+      line-height: 1.6;
+      color: rgba(255,255,255,.88);
+    }
+
+    .topics li {
+      margin: 0 0 14px;
+    }
+
+    .topics strong {
+      color: #f26522;
+      font-weight: 700;
+    }
+
+    .form-text {
+      max-width: 720px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: rgba(255,255,255,.88);
+    }
+
+    .form-text p {
+      margin: 0 0 24px;
+    }
+
+    .form-text strong {
+      color: #f26522;
+      font-weight: 600;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 14px 24px;
+      border-radius: 40px;
+      background: #f26522;
+      border: 1px solid #f26522;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: .2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    @media(max-width:760px) {
+
+      .topbar,
+      .content {
+        width: calc(100% - 32px);
+      }
+
+      .topbar {
+        padding-top: 22px;
+        padding-bottom: 20px;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .brand-name {
+        font-size: 24px;
+      }
+
+      .brand-person {
+        font-size: 11px;
+        letter-spacing: 3px;
+      }
+
+      .toplinks {
+        gap: 20px;
+        padding-top: 4px;
+        padding-bottom: 10px;
+        font-size: 9px;
+        letter-spacing: 1px;
+        flex-wrap: wrap;
+      }
+
+      .content {
+        margin-top: 35px;
+        margin-bottom: 70px;
+      }
+
+      .story {
+        padding-left: 20px;
+      }
+
+      .story::before {
+        width: 5px;
+        height: 220px;
+      }
+
+      .eyebrow {
+        margin-bottom: 18px;
+        font-size: 11px;
+        letter-spacing: 3px;
+      }
+
+      h1 {
+        margin-bottom: 28px;
+        font-size: 38px;
+        line-height: 1.08;
+        letter-spacing: -1px;
+      }
+
+      .intro {
+        font-size: 17px;
+        line-height: 1.65;
+      }
+
+      .section {
+        margin-top: 48px;
+      }
+
+      h2 {
+        margin-bottom: 24px;
+        font-size: 25px;
+      }
+
+      .topics,
+      .form-text {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .topics li {
+        margin-bottom: 15px;
+      }
+
+      .button {
+        margin-top: 12px;
+        padding: 15px 22px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main class="page">
+
+  <header class="topbar">
+
+    <a class="brand" href="/">
+      <div class="orange-line"></div>
+      <div>
+        <div class="brand-name">Ledarskapsakuten</div>
+        <div class="brand-person">PETER BRODD</div>
+      </div>
+    </a>
+
+    <nav class="toplinks">
+      <a href="/om/">Om</a>
+      <a href="https://www.linkedin.com/company/ledarskapsakuten"
+         target="_blank"
+         rel="noopener">Ledarskapsakuten på LinkedIn →</a>
+      <a href="mailto:info@ledarskapsakuten.se">Kontakt</a>
+    </nav>
+
+  </header>
+
+  <section class="content">
+
+    <div class="story">
+
+      <div class="eyebrow">Chefsstöd</div>
+
+      <h1>Ibland behöver man någon att tänka tillsammans med.</h1>
+
+      <div class="intro">
+
+        <p>
+          Att vara chef innebär ofta att fatta beslut där det inte finns
+          ett självklart rätt svar. Och ju större ansvar du har, desto färre
+          personer finns det ibland att prata helt öppet med.
+        </p>
+
+        <p>
+          Chefsstöd är inte att jag kommer in och tar över.
+          <strong>Du har ansvaret och fattar besluten. Min roll är att hjälpa
+          dig att se situationen tydligare, utmana när det behövs och komma vidare.</strong>
+        </p>
+
+      </div>
+
+      <div class="section">
+
+        <h2>Det kan handla om</h2>
+
+        <ul class="topics">
+
+          <li>
+            <strong>Ett svårt beslut</strong> – få fler perspektiv innan du bestämmer dig.
+          </li>
+
+          <li>
+            <strong>Människor</strong> – medarbetare, ledningsgrupp, konflikter
+            eller en organisation som inte riktigt fungerar.
+          </li>
+
+          <li>
+            <strong>Prioriteringar</strong> – när allt verkar viktigt och något
+            ändå måste väljas bort.
+          </li>
+
+          <li>
+            <strong>Förändring</strong> – tänka igenom vad som behöver hända
+            och hur du får organisationen med dig.
+          </li>
+
+          <li>
+            <strong>Din egen roll</strong> – chefskap, ledarskap, mandat
+            och hur du själv fungerar i situationen.
+          </li>
+
+          <li>
+            <strong>Ett konkret problem</strong> – ibland behöver man helt enkelt
+            någon erfaren att resonera med.
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="section">
+
+        <h2>Formen beror på behovet</h2>
+
+        <div class="form-text">
+
+          <p>
+            Chefsstöd behöver inte se likadant ut varje gång.
+            Det kan vara ett enskilt samtal inför ett svårt beslut,
+            några möten under en intensiv period eller ett löpande stöd
+            under längre tid.
+          </p>
+
+          <p>
+            <strong>Ibland behövs en timme. Ibland behöver man någon att återkomma till.</strong>
+          </p>
+
+        </div>
+
+        <a class="button"
+           href="mailto:info@ledarskapsakuten.se?subject=Ta%20en%20kaffe">
+          Ta en kaffe →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+</body>
+</html>
