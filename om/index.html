@@ -93,10 +93,20 @@
     }
 
     .story {
-      max-width: 790px;
-      border-left: 7px solid #f26522;
-      padding-left: 38px;
-    }
+  max-width: 790px;
+  position: relative;
+  padding-left: 38px;
+}
+
+.story::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 7px;
+  height: 250px;
+  background: #f26522;
+}
 
     .eyebrow {
       margin-bottom: 28px;
