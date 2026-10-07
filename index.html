@@ -151,11 +151,23 @@ h1 {
 }
 
 .situations {
-  margin-top: 18px;
+  margin-top: 22px;
+  max-width: 620px;
 
-  font-size: 15px;
-  line-height: 1.5;
-  color: rgba(255,255,255,.78);
+  font-size: 19px;
+  line-height: 1.55;
+  font-weight: 500;
+  color: rgba(255,255,255,.94);
+}
+
+.situation-line {
+  display: block;
+}
+
+.dot {
+  color: #f26522;
+  font-weight: 700;
+  padding: 0 8px;
 }
 
 
@@ -164,7 +176,7 @@ h1 {
 .button {
   display: inline-block;
 
-  margin-top: 32px;
+  margin-top: 34px;
   padding: 18px 30px;
 
   border-radius: 40px;
@@ -239,6 +251,10 @@ h1 {
     letter-spacing: -1px;
   }
 
+  h1 br {
+    display: none;
+  }
+
   .services {
     margin-top: 27px;
   }
@@ -253,15 +269,19 @@ h1 {
   }
 
   .situations {
-    margin-top: 14px;
+    margin-top: 18px;
     max-width: 340px;
 
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .dot {
+    padding: 0 5px;
   }
 
   .button {
-    margin-top: 25px;
+    margin-top: 27px;
     padding: 15px 22px;
 
     font-size: 10px;
@@ -334,7 +354,15 @@ h1 {
 
 
       <div class="situations">
-        Förändring · Vakans · Tillväxt · Bollplank · Mentorskap
+
+        <span class="situation-line">
+          Förändring<span class="dot">·</span>Vakans<span class="dot">·</span>Tillväxt
+        </span>
+
+        <span class="situation-line">
+          Bollplank<span class="dot">·</span>Mentorskap
+        </span>
+
       </div>
 
 
