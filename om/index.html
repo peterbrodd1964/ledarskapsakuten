@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Om Peter Brodd | Ledarskapsakuten</title>
-  <meta name="description" content="Om Peter Brodd och erfarenheterna bakom Ledarskapsakuten.">
+
+  <meta name="description"
+        content="Peter Brodd har lång erfarenhet som chef och ledare i Sverige, Norden, Mellanöstern och Europa – inom tillväxt, förändring och verksamhetsledning.">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
@@ -34,7 +34,7 @@
       display: flex;
       flex-direction: column;
       background:
-        radial-gradient(circle at 80% 50%, rgba(242,101,34,.06), transparent 35%),
+        radial-gradient(circle at 80% 35%, rgba(242,101,34,.06), transparent 35%),
         linear-gradient(120deg, #211a15 0%, #171411 100%);
     }
 
@@ -63,7 +63,7 @@
       font-size: 31px;
       font-weight: 400;
       line-height: 1;
-      letter-spacing: -0.5px;
+      letter-spacing: -.5px;
     }
 
     .brand-person {
@@ -75,16 +75,12 @@
 
     .toplinks {
       display: flex;
-      gap: 36px;
+      gap: 32px;
       padding-top: 7px;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
-    }
-
-    .active {
-      color: #f26522;
     }
 
     .content {
@@ -93,23 +89,23 @@
     }
 
     .story {
-  max-width: 790px;
-  position: relative;
-  padding-left: 38px;
-}
+      max-width: 850px;
+      position: relative;
+      padding-left: 38px;
+    }
 
-.story::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 7px;
-  height: 250px;
-  background: #f26522;
-}
+    .story::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 7px;
+      height: 250px;
+      background: #f26522;
+    }
 
     .eyebrow {
-      margin-bottom: 28px;
+      margin-bottom: 24px;
       color: #f26522;
       font-size: 13px;
       font-weight: 700;
@@ -118,8 +114,8 @@
     }
 
     h1 {
-      margin: 0 0 42px;
-      max-width: 760px;
+      margin: 0 0 38px;
+      max-width: 830px;
       font-size: clamp(42px, 4.3vw, 66px);
       line-height: 1.08;
       font-weight: 300;
@@ -127,14 +123,14 @@
     }
 
     .text {
-      max-width: 690px;
-      font-size: 18px;
+      max-width: 720px;
+      font-size: 19px;
       line-height: 1.7;
-      color: rgba(255,255,255,.88);
+      color: rgba(255,255,255,.9);
     }
 
     .text p {
-      margin: 0 0 25px;
+      margin: 0 0 24px;
     }
 
     .text strong {
@@ -142,9 +138,38 @@
       font-weight: 600;
     }
 
+    .linkedin {
+      max-width: 720px;
+      margin-top: 58px;
+      padding-top: 34px;
+      border-top: 1px solid rgba(255,255,255,.14);
+    }
+
+    .linkedin p {
+      margin: 0 0 18px;
+      max-width: 650px;
+      font-size: 17px;
+      line-height: 1.65;
+      color: rgba(255,255,255,.78);
+    }
+
+    .linkedin-link {
+      display: inline-block;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: .2s ease;
+    }
+
+    .linkedin-link:hover {
+      color: #f26522;
+    }
+
     .button {
       display: inline-block;
-      margin-top: 18px;
+      margin-top: 38px;
       padding: 14px 24px;
       border-radius: 40px;
       background: #f26522;
@@ -160,7 +185,7 @@
       transform: translateY(-2px);
     }
 
-    @media (max-width: 760px) {
+    @media(max-width:760px) {
 
       .topbar,
       .content {
@@ -184,13 +209,13 @@
       }
 
       .toplinks {
-  gap: 20px;
-  padding-top: 4px;
-  padding-bottom: 10px;
-  font-size: 9px;
-  letter-spacing: 1px;
-  flex-wrap: wrap;
-}
+        gap: 17px;
+        padding-top: 4px;
+        padding-bottom: 10px;
+        font-size: 9px;
+        letter-spacing: 1px;
+        flex-wrap: wrap;
+      }
 
       .content {
         margin-top: 35px;
@@ -198,34 +223,49 @@
       }
 
       .story {
-        border-left-width: 5px;
         padding-left: 20px;
       }
 
+      .story::before {
+        width: 5px;
+        height: 220px;
+      }
+
       .eyebrow {
-        margin-bottom: 20px;
+        margin-bottom: 18px;
         font-size: 11px;
         letter-spacing: 3px;
       }
 
       h1 {
-        margin-bottom: 32px;
+        margin-bottom: 30px;
         font-size: 38px;
         line-height: 1.08;
         letter-spacing: -1px;
       }
 
       .text {
-        font-size: 16px;
+        font-size: 17px;
         line-height: 1.65;
       }
 
-      .text p {
-        margin-bottom: 22px;
+      .linkedin {
+        margin-top: 44px;
+        padding-top: 28px;
+      }
+
+      .linkedin p {
+        font-size: 15px;
+      }
+
+      .linkedin-link {
+        font-size: 11px;
+        letter-spacing: 1.5px;
       }
 
       .button {
-        padding: 15px 30px;
+        margin-top: 32px;
+        padding: 15px 22px;
         font-size: 10px;
         letter-spacing: 1.5px;
       }
@@ -235,82 +275,93 @@
 
 <body>
 
-  <main class="page">
+<main class="page">
 
-    <header class="topbar">
+  <header class="topbar">
 
-      <a class="brand" href="/">
-        <div class="orange-line"></div>
-        <div>
-          <div class="brand-name">Ledarskapsakuten</div>
-          <div class="brand-person">PETER BRODD</div>
-        </div>
-      </a>
+    <a class="brand" href="/">
+      <div class="orange-line"></div>
+      <div>
+        <div class="brand-name">Ledarskapsakuten</div>
+        <div class="brand-person">PETER BRODD</div>
+      </div>
+    </a>
 
-      <nav class="toplinks">
-        <a class="active" href="/om/">Om</a>
+    <nav class="toplinks">
+      <a href="/interim/">Interim</a>
+      <a href="/chefsstod/">Chefsstöd</a>
+      <a href="/om/">Om</a>
+      <a href="mailto:info@ledarskapsakuten.se">Kontakt</a>
+    </nav>
 
-        <a href="https://www.linkedin.com/company/ledarskapsakuten"
-           target="_blank" rel="noopener">
-          Ledarskapsakuten på LinkedIn →
-        </a>
+  </header>
 
-        <a href="mailto:info@ledarskapsakuten.se">
-          Kontakt
-        </a>
-      </nav>
+  <section class="content">
 
-    </header>
+    <div class="story">
 
-    <section class="content">
+      <div class="eyebrow">Om</div>
 
-      <div class="story">
+      <h1>
+        Jag har varit chef och ledare under större delen av mitt yrkesliv.
+      </h1>
 
+      <div class="text">
 
-        <h1>
-          Jag har varit chef och ledare under större delen av mitt yrkesliv.
-        </h1>
+        <p>
+          Jag har haft förmånen att arbeta med många fantastiska chefer och
+          ledare. Människor som trott på mig, utmanat mig och gett mig ansvar.
+          Flera av dem har blivit förebilder och påverkat hur jag själv ser på
+          chefskap och ledarskap.
+        </p>
 
-        <div class="text">
+        <p>
+          Genom åren har jag arbetat i Sverige, Norden, Mellanöstern och andra
+          delar av Europa. I stora internationella företag och i mindre
+          verksamheter. Jag har byggt nytt, arbetat med tillväxt, vänt
+          verksamheter och lett genom stora förändringar.
+        </p>
 
-          <p>
-            Jag har haft förmånen att arbeta med många fantastiska chefer och ledare.
-            Människor som trott på mig, utmanat mig och gett mig ansvar.
-            Flera av dem har blivit förebilder och påverkat hur jag själv ser på
-            chefskap och ledarskap.
-          </p>
+        <p>
+          En sak har blivit allt tydligare för mig:
+          <strong>chef och ledare är inte samma sak.</strong>
+          Att vara en bra ledare gör dig inte per automatik till en bra chef.
+          Och tvärtom.
+        </p>
 
-          <p>
-            Genom åren har jag arbetat i Sverige, Norden, Mellanöstern och andra
-            delar av Europa. I stora internationella företag och i mindre verksamheter.
-            Jag har byggt nytt, arbetat med tillväxt, vänt verksamheter och lett
-            genom stora förändringar.
-          </p>
-
-          <p>
-            En sak har blivit allt tydligare för mig:
-            <strong>chef och ledare är inte samma sak.</strong>
-            Att vara en bra ledare gör dig inte per automatik till en bra chef.
-            Och tvärtom.
-          </p>
-
-          <p>
-            Jag börjar därför inte med ett verktyg, en metod eller ett färdigt program.
-            Jag börjar med att försöka förstå problemet och vad som faktiskt behöver göras.
-          </p>
-
-          <a class="button"
-             href="mailto:info@ledarskapsakuten.se?subject=Ta%20en%20kaffe">
-            Ta en kaffe →
-          </a>
-
-        </div>
+        <p>
+          Jag börjar därför inte med ett verktyg, en metod eller ett färdigt
+          program. Jag börjar med att försöka förstå problemet och vad som
+          faktiskt behöver göras.
+        </p>
 
       </div>
 
-    </section>
+      <div class="linkedin">
 
-  </main>
+        <p>
+          Mer om min bakgrund och de erfarenheter som format mig finns på LinkedIn.
+        </p>
+
+        <a class="linkedin-link"
+           href="https://www.linkedin.com/in/broddpeter"
+           target="_blank"
+           rel="noopener noreferrer">
+          LinkedIn →
+        </a>
+
+      </div>
+
+      <a class="button"
+         href="mailto:info@ledarskapsakuten.se?subject=Ta%20en%20kaffe">
+        Ta en kaffe →
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
 
 </body>
 </html>
