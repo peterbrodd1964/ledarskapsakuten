@@ -1,155 +1,209 @@
 <!doctype html>
 <html lang="sv">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ledarskapsakuten | Peter Brodd</title>
-  <meta name="description" content="Ledarskapsakuten – Interim och chefsstöd med Peter Brodd.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<title>Ledarskapsakuten | Interim och chefsstöd – Peter Brodd</title>
+<meta name="description"
+      content="Erfaren hjälp med ledarskapet när den behövs. Interim och chefsstöd med Peter Brodd.">
 
-    html, body {
-      margin: 0;
-      min-height: 100%;
-    }
+<style>
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #ffffff;
-      background: #241b14;
-      -webkit-font-smoothing: antialiased;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    .hero {
-      min-height: 100vh;
-      position: relative;
-      background-image:
-        linear-gradient(
-          90deg,
-          rgba(18, 13, 9, 0.82) 0%,
-          rgba(18, 13, 9, 0.58) 43%,
-          rgba(18, 13, 9, 0.12) 75%
-        ),
-        url("kaffebild.png");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      flex-direction: column;
-    }
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
 
-    .topbar {
-      width: min(1400px, calc(100% - 80px));
-      margin: 0 auto;
-      padding: 42px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 30px;
-    }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: #241b14;
+  -webkit-font-smoothing: antialiased;
+}
 
-    .brand {
-      display: flex;
-      align-items: stretch;
-      gap: 14px;
-    }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-    .orange-line {
-      width: 7px;
-      background: #f26522;
-    }
+.hero {
+  min-height: 100vh;
+  position: relative;
 
-    .brand-name {
-      font-size: 31px;
-      font-weight: 400;
-      line-height: 1;
-      letter-spacing: -0.5px;
-    }
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(18,13,9,.82) 0%,
+      rgba(18,13,9,.58) 43%,
+      rgba(18,13,9,.12) 75%
+    ),
+    url("kaffebild.png");
 
-    .brand-person {
-      margin-top: 10px;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 4px;
-    }
+  background-size: cover;
+  background-position: center;
 
-    .toplinks {
-      display: flex;
-      gap: 36px;
-      padding-top: 7px;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
+  display: flex;
+  flex-direction: column;
+}
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
 
-    .content {
-      width: min(1400px, calc(100% - 80px));
-      margin: auto;
-      padding-bottom: 260px;
-    }
+/* TOP */
 
-    h1 {
-      max-width: 920px;
-      margin: 0;
-      font-size: clamp(40px, 3.8vw, 62px);
-      line-height: 1.12;
-      font-weight: 300;
-      letter-spacing: -2px;
-    }
+.topbar {
+  width: min(1400px, calc(100% - 80px));
+  margin: 0 auto;
+  padding: 42px 0;
 
-    .accent {
-      color: #f26522;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
 
-    .services {
-      margin-top: 32px;
-      font-size: 17px;
-      font-weight: 600;
-      letter-spacing: 6px;
-      text-transform: uppercase;
-    }
+.brand {
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+}
 
-    .divider {
-      color: #f26522;
-      margin: 0 22px;
-    }
+.orange-line {
+  width: 7px;
+  background: #f26522;
+}
 
-    .buttons {
-      display: flex;
-      gap: 16px;
-      margin-top: 36px;
-    }
+.brand-name {
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.5px;
+}
 
-    .button {
-      display: inline-block;
-      padding: 18px 30px;
-      border-radius: 40px;
-      border: 1px solid rgba(255,255,255,.8);
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      transition: .2s ease;
-    }
+.brand-person {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
 
-    .button-primary {
-      background: #f26522;
-      border-color: #f26522;
-    }
+.toplinks {
+  display: flex;
+  gap: 32px;
+  padding-top: 7px;
 
-    .button:hover {
-      transform: translateY(-2px);
-    }
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
-   @media (max-width: 760px) {
+
+/* CONTENT */
+
+.content {
+  width: min(1400px, calc(100% - 80px));
+  margin: auto;
+  padding-bottom: 150px;
+}
+
+h1 {
+  max-width: 900px;
+  margin: 0;
+
+  font-size: clamp(42px, 4.1vw, 64px);
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: -2px;
+}
+
+
+/* SERVICES */
+
+.services {
+  margin-top: 38px;
+  max-width: 900px;
+}
+
+.service-headings {
+  display: flex;
+  align-items: center;
+
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.divider {
+  color: #f26522;
+  margin: 0 22px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 54px;
+
+  margin-top: 22px;
+  max-width: 850px;
+}
+
+.service {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.service-main {
+  margin: 0 0 7px;
+  font-weight: 600;
+}
+
+.service-situations {
+  margin: 0;
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: .3px;
+}
+
+.service a:hover {
+  opacity: .8;
+}
+
+
+/* CTA */
+
+.button {
+  display: inline-block;
+
+  margin-top: 34px;
+  padding: 18px 30px;
+
+  border-radius: 40px;
+  border: 1px solid #f26522;
+  background: #f26522;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  transition: .2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* MOBILE */
+
+@media(max-width:760px) {
+
   .hero {
     min-height: 100svh;
     background-position: 54% center;
@@ -163,6 +217,7 @@
   .topbar {
     padding-top: 22px;
     padding-bottom: 20px;
+
     flex-direction: column;
     gap: 16px;
   }
@@ -177,29 +232,34 @@
   }
 
   .toplinks {
-    display: flex;
-    gap: 18px;
-    padding-top: 0;
+    gap: 17px;
+    padding-top: 4px;
+
     font-size: 9px;
     letter-spacing: 1px;
+
     flex-wrap: wrap;
   }
 
   .content {
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: auto;
-    padding-bottom: 40px;
+    padding-bottom: 38px;
   }
 
   h1 {
-    max-width: 360px;
-    font-size: 36px;
+    max-width: 380px;
+
+    font-size: 37px;
     line-height: 1.08;
     letter-spacing: -1px;
   }
 
   .services {
-    margin-top: 22px;
+    margin-top: 27px;
+  }
+
+  .service-headings {
     font-size: 11px;
     letter-spacing: 2.5px;
   }
@@ -208,66 +268,141 @@
     margin: 0 12px;
   }
 
-  .buttons {
-    margin-top: 24px;
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    margin-top: 18px;
+    max-width: 350px;
+  }
+
+  .service {
+    font-size: 14px;
+  }
+
+  .service-main {
+    margin-bottom: 5px;
+  }
+
+  .service-situations {
+    font-size: 11px;
+    line-height: 1.45;
   }
 
   .button {
+    margin-top: 25px;
     padding: 15px 22px;
+
     font-size: 10px;
     letter-spacing: 1.5px;
   }
+
 }
-  </style>
+
+</style>
 </head>
 
+
 <body>
-  <main class="hero">
 
-    <header class="topbar">
-      <div class="brand">
-        <div class="orange-line"></div>
-        <div>
-          <div class="brand-name">Ledarskapsakuten</div>
-          <div class="brand-person">PETER BRODD</div>
+<main class="hero">
+
+
+  <header class="topbar">
+
+    <a class="brand" href="/">
+      <div class="orange-line"></div>
+
+      <div>
+        <div class="brand-name">Ledarskapsakuten</div>
+        <div class="brand-person">PETER BRODD</div>
+      </div>
+    </a>
+
+
+    <nav class="toplinks">
+
+      <a href="/interim/">Interim</a>
+
+      <a href="/chefsstod/">Chefsstöd</a>
+
+      <a href="/om/">Om</a>
+
+      <a href="mailto:info@ledarskapsakuten.se">
+        Kontakt
+      </a>
+
+    </nav>
+
+  </header>
+
+
+
+  <section class="content">
+
+    <h1>
+      När du behöver erfaren hjälp med ledarskapet – nu.
+    </h1>
+
+
+    <div class="services">
+
+
+      <div class="service-headings">
+
+        <a href="/interim/">INTERIM</a>
+
+        <span class="divider">|</span>
+
+        <a href="/chefsstod/">CHEFSSTÖD</a>
+
+      </div>
+
+
+      <div class="service-grid">
+
+
+        <div class="service">
+
+          <p class="service-main">
+            Jag kliver in och tar ansvar.
+          </p>
+
+          <p class="service-situations">
+            Förändring · Vakans · Tillväxt · Problem → Fokus
+          </p>
+
         </div>
+
+
+        <div class="service">
+
+          <p class="service-main">
+            Du har ansvaret. Jag hjälper dig vidare.
+          </p>
+
+          <p class="service-situations">
+            Beslut · Människor · Prioriteringar · Förändring · När det kör fast
+          </p>
+
+        </div>
+
+
       </div>
 
-      <nav class="toplinks">
-        <a href="/om/">Om</a>
-       <a href="https://www.linkedin.com/company/ledarskapsakuten"
-   target="_blank" rel="noopener">Ledarskapsakuten på LinkedIn →</a>
-        <a href="mailto:info@ledarskapsakuten.se">Kontakt</a>
-      </nav>
-    </header>
 
-    <section class="content">
+      <a class="button"
+         href="mailto:info@ledarskapsakuten.se?subject=Ta%20en%20kaffe">
+        Ta en kaffe →
+      </a>
 
-      <h1>
-        Hjälper bra ledare bli
-        <span class="accent">bättre chefer</span><br>
-        och bra chefer bli
-        <span class="accent">bättre ledare.</span>
-      </h1>
 
-      <div class="services">
-  <a href="/interim/">INTERIM</a>
-  <span class="divider">|</span>
-  <a href="/chefsstod/">CHEFSSTÖD</a>
-</div>
+    </div>
 
-      <div class="buttons">
-        <a class="button button-primary"
-           href="https://www.linkedin.com/in/broddpeter"
-           target="_blank" rel="noopener">
-          Följ Peter på LinkedIn →
-        </a>
+  </section>
 
-       
-      </div>
 
-    </section>
+</main>
 
-  </main>
 </body>
 </html>
