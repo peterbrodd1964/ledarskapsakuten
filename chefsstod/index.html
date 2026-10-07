@@ -7,7 +7,7 @@
   <title>Chefsstöd | Ledarskapsakuten – Peter Brodd</title>
 
   <meta name="description"
-        content="Chefsstöd för chefer som behöver ett erfaret bollplank i beslut, förändring, ledarskap och svåra situationer. Peter Brodd, Ledarskapsakuten.">
+        content="Chefsstöd för chefer som behöver ett erfaret bollplank. Akut hjälp inom 24 timmar eller löpande stöd när det behövs. Peter Brodd, Ledarskapsakuten.">
 
   <style>
     * { box-sizing: border-box; }
@@ -75,9 +75,9 @@
 
     .toplinks {
       display: flex;
-      gap: 36px;
+      gap: 32px;
       padding-top: 7px;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -114,12 +114,25 @@
     }
 
     h1 {
-      margin: 0 0 34px;
+      margin: 0 0 28px;
       max-width: 820px;
       font-size: clamp(42px, 4.3vw, 66px);
       line-height: 1.08;
       font-weight: 300;
       letter-spacing: -2px;
+    }
+
+    .situations {
+      margin: 0 0 36px;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: rgba(255,255,255,.94);
+    }
+
+    .dot {
+      color: #f26522;
+      padding: 0 8px;
     }
 
     .intro {
@@ -133,61 +146,107 @@
       margin: 0 0 24px;
     }
 
-    .intro strong {
+    .key-thought {
       color: #f26522;
       font-weight: 600;
     }
 
     .section {
       max-width: 760px;
-      margin-top: 62px;
+      margin-top: 74px;
     }
 
     h2 {
-      margin: 0 0 28px;
-      font-size: 30px;
+      margin: 0 0 32px;
+      font-size: 32px;
       line-height: 1.2;
-      font-weight: 400;
+      font-weight: 300;
       letter-spacing: -.5px;
     }
 
-    .topics {
+    .needs {
       margin: 0;
       padding: 0;
       list-style: none;
+      max-width: 740px;
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.65;
       color: rgba(255,255,255,.88);
     }
 
-    .topics li {
-      margin: 0 0 14px;
+    .needs li {
+      margin: 0 0 20px;
     }
 
-    .topics strong {
-      color: #f26522;
+    .needs strong {
+      color: #ffffff;
       font-weight: 700;
     }
 
-    .form-text {
+    .support-option {
       max-width: 720px;
+      padding: 0 0 46px;
+      margin: 0 0 46px;
+      border-bottom: 1px solid rgba(255,255,255,.14);
+    }
+
+    .support-option:last-of-type {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h3 {
+      margin: 0 0 12px;
+      font-size: 25px;
+      line-height: 1.3;
+      font-weight: 600;
+    }
+
+    .promise {
+      margin: 0 0 22px;
+      font-size: 21px;
+      line-height: 1.5;
+      font-weight: 400;
+      color: #ffffff;
+    }
+
+    .support-text {
+      max-width: 700px;
       font-size: 18px;
       line-height: 1.7;
       color: rgba(255,255,255,.88);
     }
 
-    .form-text p {
-      margin: 0 0 24px;
+    .support-text p {
+      margin: 0 0 22px;
     }
 
-    .form-text strong {
+    .start-now {
       color: #f26522;
       font-weight: 600;
     }
 
+    .terms {
+      margin-top: 30px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.8;
+      letter-spacing: .4px;
+      color: rgba(255,255,255,.94);
+    }
+
+    .footnote {
+      margin-top: 16px;
+      max-width: 690px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: rgba(255,255,255,.62);
+    }
+
     .button {
       display: inline-block;
-      margin-top: 18px;
+      margin-top: 44px;
       padding: 14px 24px;
       border-radius: 40px;
       background: #f26522;
@@ -227,7 +286,7 @@
       }
 
       .toplinks {
-        gap: 20px;
+        gap: 17px;
         padding-top: 4px;
         padding-bottom: 10px;
         font-size: 9px;
@@ -256,10 +315,20 @@
       }
 
       h1 {
-        margin-bottom: 28px;
+        margin-bottom: 22px;
         font-size: 38px;
         line-height: 1.08;
         letter-spacing: -1px;
+      }
+
+      .situations {
+        margin-bottom: 28px;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .dot {
+        padding: 0 5px;
       }
 
       .intro {
@@ -268,26 +337,48 @@
       }
 
       .section {
-        margin-top: 48px;
+        margin-top: 54px;
       }
 
       h2 {
-        margin-bottom: 24px;
-        font-size: 25px;
+        margin-bottom: 26px;
+        font-size: 27px;
       }
 
-      .topics,
-      .form-text {
+      .needs,
+      .support-text {
         font-size: 16px;
-        line-height: 1.6;
+        line-height: 1.65;
       }
 
-      .topics li {
-        margin-bottom: 15px;
+      .needs li {
+        margin-bottom: 18px;
+      }
+
+      .support-option {
+        padding-bottom: 38px;
+        margin-bottom: 38px;
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+
+      .promise {
+        font-size: 19px;
+      }
+
+      .terms {
+        font-size: 13px;
+        line-height: 1.8;
+      }
+
+      .footnote {
+        font-size: 12px;
       }
 
       .button {
-        margin-top: 12px;
+        margin-top: 34px;
         padding: 15px 22px;
         font-size: 10px;
         letter-spacing: 1.5px;
@@ -311,10 +402,9 @@
     </a>
 
     <nav class="toplinks">
+      <a href="/interim/">Interim</a>
+      <a href="/chefsstod/">Chefsstöd</a>
       <a href="/om/">Om</a>
-      <a href="https://www.linkedin.com/company/ledarskapsakuten"
-         target="_blank"
-         rel="noopener">Ledarskapsakuten på LinkedIn →</a>
       <a href="mailto:info@ledarskapsakuten.se">Kontakt</a>
     </nav>
 
@@ -326,20 +416,29 @@
 
       <div class="eyebrow">Chefsstöd</div>
 
-      <h1>Ibland behöver man någon att tänka tillsammans med.</h1>
+      <h1>
+        Ibland behöver man någon att tänka tillsammans med.
+      </h1>
+
+      <div class="situations">
+        Bollplank<span class="dot">·</span>Mentorskap
+      </div>
 
       <div class="intro">
 
         <p>
-          Att vara chef innebär ofta att fatta beslut där det inte finns
-          ett självklart rätt svar. Och ju större ansvar du har, desto färre
+          Att vara chef innebär ofta att fatta beslut där det inte finns ett
+          självklart rätt svar. Och ju större ansvar du har, desto färre
           personer finns det ibland att prata helt öppet med.
         </p>
 
         <p>
           Chefsstöd är inte att jag kommer in och tar över.
-          <strong>Du har ansvaret och fattar besluten. Min roll är att hjälpa
-          dig att se situationen tydligare, utmana när det behövs och komma vidare.</strong>
+        </p>
+
+        <p class="key-thought">
+          Du har ansvaret och fattar besluten. Min roll är att hjälpa dig
+          att se situationen tydligare, utmana när det behövs och komma vidare.
         </p>
 
       </div>
@@ -348,20 +447,22 @@
 
         <h2>Det kan handla om</h2>
 
-        <ul class="topics">
+        <ul class="needs">
 
           <li>
-            <strong>Ett svårt beslut</strong> – få fler perspektiv innan du bestämmer dig.
+            <strong>Svåra beslut</strong> – få fler perspektiv innan du
+            bestämmer dig.
           </li>
 
           <li>
-            <strong>Människor</strong> – medarbetare, ledningsgrupp, konflikter
-            eller en organisation som inte riktigt fungerar.
+            <strong>Eget ledarskap</strong> – få stöd i din roll, hitta vägen
+            genom en särskilt krävande period eller få hjälp att hålla när
+            trycket är högt.
           </li>
 
           <li>
-            <strong>Prioriteringar</strong> – när allt verkar viktigt och något
-            ändå måste väljas bort.
+            <strong>Prioriteringar</strong> – när allt verkar viktigt och
+            något ändå måste väljas bort.
           </li>
 
           <li>
@@ -370,13 +471,8 @@
           </li>
 
           <li>
-            <strong>Din egen roll</strong> – chefskap, ledarskap, mandat
-            och hur du själv fungerar i situationen.
-          </li>
-
-          <li>
-            <strong>Ett konkret problem</strong> – ibland behöver man helt enkelt
-            någon erfaren att resonera med.
+            <strong>När det kör fast</strong> – i en situation, ett team,
+            en ledningsgrupp eller i ditt eget sätt att komma vidare.
           </li>
 
         </ul>
@@ -387,18 +483,71 @@
 
         <h2>Formen beror på behovet</h2>
 
-        <div class="form-text">
+        <div class="support-option">
 
-          <p>
-            Chefsstöd behöver inte se likadant ut varje gång.
-            Det kan vara ett enskilt samtal inför ett svårt beslut,
-            några möten under en intensiv period eller ett löpande stöd
-            under längre tid.
+          <h3>Akut Chefsstöd</h3>
+
+          <p class="promise">
+            När du behöver hjälp nu.
           </p>
 
-          <p>
-            <strong>Ibland behövs en timme. Ibland behöver man någon att återkomma till.</strong>
+          <div class="support-text">
+
+            <p>
+              Ett problem, ett svårt beslut eller en situation där du behöver
+              ett erfaret bollplank snabbt.
+            </p>
+
+            <p class="start-now">
+              När du ringer börjar vi arbeta med problemet.
+              Det första samtalet är inte ett säljsamtal.
+            </p>
+
+          </div>
+
+          <div class="terms">
+            Fast arvode per samtal
+            <span class="dot">·</span>
+            Hjälp inom 24 h
+            <span class="dot">·</span>
+            Ingen bindningstid
+            <span class="dot">·</span>
+            Inget klippkort
+          </div>
+
+        </div>
+
+        <div class="support-option">
+
+          <h3>Löpande Chefsstöd</h3>
+
+          <p class="promise">
+            Erfaret chefsstöd innan – och när – det behövs.
           </p>
+
+          <div class="support-text">
+
+            <p>
+              Du har någon erfaren att återkomma till för bollplank,
+              rådgivning och stöd – när frågor uppstår, inför viktiga beslut
+              eller under perioder när det är mycket att hantera.
+            </p>
+
+          </div>
+
+          <div class="terms">
+            Fast arvode per månad
+            <span class="dot">·</span>
+            Ingen bindningstid
+            <span class="dot">·</span>
+            Ingen minuträkning*
+          </div>
+
+          <div class="footnote">
+            * Chefsstödet omfattar rådgivning, bollplank och stöd.
+            Operativa arbetsuppgifter eller mer omfattande insatser
+            överenskommes separat.
+          </div>
 
         </div>
 
